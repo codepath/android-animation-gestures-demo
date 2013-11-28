@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".AnimationDemoActivity" >
+
+    <Button
+        android:id="@+id/btnFade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onFadeOut"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="Fade Out" />
+
+    <Button
+        android:id="@+id/btnSlideMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnFade"
+        android:onClick="onSlideMessage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:text="Sliding Message" />
+
+    <TextView
+        android:id="@+id/tvMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="This is a sliding message"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnRepeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSlideMessage"
+        android:onClick="onRepeatAnimation"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:text="Repeat Animation" />
+
+    <Button
+        android:id="@+id/btnActivityTransition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnRepeat"
+        android:onClick="onActivityTransition"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:text="Custom Activity Transition" />
+
+</RelativeLayout>

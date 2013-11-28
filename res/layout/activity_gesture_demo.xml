@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".GestureDemoActivity" >
+
+    <Button
+        android:id="@+id/btnLongClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Long Click Me" />
+
+    <Button
+        android:id="@+id/btnDoubleTap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnLongClick"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="Double Tap Me" />
+
+    <TextView
+        android:id="@+id/tvSwipeMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnDoubleTap"
+        android:background="@drawable/shape_simple"
+        android:padding="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:text="Swipe Me"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/tvDragMe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_light"
+        android:padding="10dp"
+        android:textColor="#ffffff"
+        android:layout_alignLeft="@+id/tvSwipeMe"
+        android:layout_below="@+id/tvSwipeMe"
+        android:layout_marginTop="35dp"
+        android:text="Drag Me" />
+
+    <TextView
+        android:id="@+id/tvDropZone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_border_red"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="23dp"
+        android:padding="20dp"
+        android:text="Drop Here"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>
