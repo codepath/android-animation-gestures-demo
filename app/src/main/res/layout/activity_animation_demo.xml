@@ -36,7 +36,7 @@
         android:layout_centerHorizontal="true"
         android:text="This is a sliding message"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:visibility="gone" />
+        android:visibility="invisible" />
 
     <Button
         android:id="@+id/btnRepeat"

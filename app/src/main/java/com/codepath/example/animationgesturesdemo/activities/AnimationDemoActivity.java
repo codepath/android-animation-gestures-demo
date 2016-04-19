@@ -41,14 +41,12 @@ public class AnimationDemoActivity extends Activity {
 
 	// Slide message from button up to display, then later slide out
 	public void onSlideMessage(View v) {
-		tvMessage.setVisibility(View.VISIBLE);
-		final int yPosInitial = getScreenHeight() + tvMessage.getHeight();
-		int yPosDest = tvMessage.getHeight();
-		tvMessage.setY(yPosInitial);
-		tvMessage.animate().translationY(yPosDest).setDuration(2000).setListener(new AnimatorListenerAdapter() {
+        tvMessage.setTranslationY(tvMessage.getHeight());
+        tvMessage.setVisibility(View.VISIBLE);
+		tvMessage.animate().translationY(0).setDuration(2000).setListener(new AnimatorListenerAdapter() {
 			@Override
 			public void onAnimationEnd(Animator animation) {
-				tvMessage.animate().translationY(yPosInitial).setDuration(2000).setStartDelay(2000);
+				tvMessage.animate().translationY(tvMessage.getHeight()).setDuration(2000).setStartDelay(2000);
 			}
 		});
 	}
